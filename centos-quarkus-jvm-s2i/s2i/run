@@ -3,5 +3,5 @@
 # This POC script is (intentionally) overly trivial.
 # a TODO future PRODUCTION version of this would probably want tomake it possible to
 # e.g. pass additional parameters to the executable, as does fabric8io-images/s2i's run script.
-
+cd ${QUARKUS_HOME}
 java -jar ${QUARKUS_HOME}/*-runner.jar -Dquarkus.http.host=0.0.0.0
