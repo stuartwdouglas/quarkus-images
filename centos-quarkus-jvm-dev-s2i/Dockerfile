@@ -9,6 +9,7 @@ ARG MAVEN_URL=https://archive.apache.org/dist/maven/maven-3/$MAVEN_VERSION/binar
 ARG USER_HOME_DIR="/home/quarkus"
 ARG MAVEN_BASE_URL=https://archive.apache.org/dist/maven/maven-3/${MAVEN_VERSION}/binaries
 
+ENV HOME /home/quarkus
 ENV MAVEN_HOME /usr/share/maven
 ENV JAVA_HOME /lib/jvm/java-1.8.0
 ENV QUARKUS_HOME=/home/quarkus
