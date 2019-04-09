@@ -10,9 +10,9 @@ ARG USER_HOME_DIR="/home/quarkus"
 ARG MAVEN_BASE_URL=https://archive.apache.org/dist/maven/maven-3/${MAVEN_VERSION}/binaries
 
 ENV MAVEN_HOME /usr/share/maven
-ENV MAVEN_CONFIG "$USER_HOME_DIR/.m2"
 ENV JAVA_HOME /lib/jvm/java-1.8.0
 ENV QUARKUS_HOME=/home/quarkus
+ENV MAVEN_CONFIG "/home/quarkus/.m2"
 ENV MAVEN_OPTS="-XX:+TieredCompilation -XX:TieredStopAtLevel=1"
 
 ENV PATH=$PATH:$JAVA_HOME/bin
